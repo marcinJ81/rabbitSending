@@ -10,6 +10,8 @@ namespace RAbbitRecive
     {
         static async Task Main(string[] args)
         {
+           
+
             var factory = new ConnectionFactory { HostName = "localhost" };
             using var connection = await factory.CreateConnectionAsync();
             using var channel = await connection.CreateChannelAsync();
